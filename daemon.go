@@ -157,7 +157,9 @@ func build() bool {
 		return true
 	}
 
-	fmt.Println(args)
+	if args[0] == "none" {
+		return true
+	}
 
 	cmd := exec.Command(args[0], args[1:]...)
 
