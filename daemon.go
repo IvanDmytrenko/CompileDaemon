@@ -162,7 +162,7 @@ func build() bool {
 	}
 
 	cmd := exec.Command(args[0], args[1:]...)
-	log.Println("Built")
+	log.Println(okColor("Built"))
 	if *flagBuildDir != "" {
 		cmd.Dir = *flagBuildDir
 	} else if len(flagDirectories) > 0 {
