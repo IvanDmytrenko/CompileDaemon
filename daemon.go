@@ -157,6 +157,8 @@ func build() bool {
 		return true
 	}
 
+	fmt.Println(args)
+
 	cmd := exec.Command(args[0], args[1:]...)
 
 	if *flagBuildDir != "" {

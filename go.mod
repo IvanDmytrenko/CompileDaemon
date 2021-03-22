@@ -1,4 +1,4 @@
-module github.com/githubnemo/CompileDaemon
+module github.com/IvanDmytrenko/CompileDaemon
 
 go 1.11
 
